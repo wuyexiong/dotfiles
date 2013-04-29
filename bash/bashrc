@@ -160,3 +160,4 @@ function myip() {
 
 # finis
 # mhn 2011.7.19
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

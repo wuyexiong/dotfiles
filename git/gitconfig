@@ -1,11 +1,6 @@
 [user]
-	name = Mark Nichols
-    email = mark@zanshin.net
-
-[github]
-	user = zan5hin
-    token = efd2c818fb62cceb2f434f40f1b261b70ddf4c6b
-
+	name = Wuyexiong
+    email = forever_crying@qq.com
 [color]
 	ui = auto
     interactive = auto
