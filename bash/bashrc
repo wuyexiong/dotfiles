@@ -8,13 +8,13 @@
 # Source global definitions and my aliases file
 # -------------------------------------------------------------------
 # source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
-fi
+# if [ -f /etc/bashrc ]; then
+# 	. /etc/bashrc
+# fi
 
 # source my aliases file
-if [ -f .bash_aliases ]; then
-	. .bash_aliases
+if [ -f ~/.bash_aliases ]; then
+	. ~/.bash_aliases
 fi
 
 # -------------------------------------------------------------------
@@ -27,7 +27,7 @@ fi
 if [ -f /usr/local/etc/git-completion.bash ]; then
   source /usr/local/etc/git-completion.bash
 fi
-GIT_PS1_SHOWDIRTYSTATE=1
+#GIT_PS1_SHOWDIRTYSTATE=1
 
 
 # -------------------------------------------------------------------
@@ -37,7 +37,7 @@ GIT_PS1_SHOWDIRTYSTATE=1
 # also set title to user@host and display current directory
 # added git repository information 7.15.2011
 
-PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\H \[\e[33m\]\w\[\e[0m\] $(__git_ps1 "(%s)") \n$\[\033]0;\u@\h:\w\007\] '
+#PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\H \[\e[33m\]\w\[\e[0m\] $(__git_ps1 "(%s)") \n$\[\033]0;\u@\h:\w\007\] '
 #PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\H \[\e[33m\]\w\[\e[0m\]\n$\[\033]0;\u@\h:\w\007\] '
 
 
@@ -45,10 +45,11 @@ PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\H \[\e[33m\]\w\[\e[0m\] $(__git_ps1 "(%s)") \n
 # Environment configuration stuff
 # -------------------------------------------------------------------
 # setup for java
-JAVA_HOME=/Library/Java/Home
+#JAVA_HOME=/Library/Java/Home
 
-# setup for Jboss 5
-JBOSS_HOME=/usr/local/jboss5
+#setup for Android
+ANDROID_HOME=/Users/wuyexiong/Android/android-sdk-macosx
+
 
 # setup for Maven 1 & 2
 MAVEN_HOME=/usr/local/maven-1.1
@@ -87,7 +88,7 @@ CLICOLOR=1
 LSCOLORS=gxFxCxDxBxegedabagacad
 
 # export settings
-export JAVA_HOME M2_HOME M2 MAVEN_HOME HISTCONTROL HISTFILESIZE HISTSIZE HISTIGNORE CLICOLOR LSCOLORS 
+export JAVA_HOME M2_HOME M2 MAVEN_HOME HISTCONTROL HISTFILESIZE HISTSIZE HISTIGNORE CLICOLOR LSCOLORS ANDROID_HOME
 export JAVA_OPTS MAVEN_OPTS CVSROOT CVS_RSH
 
 # -------------------------------------------------------------------

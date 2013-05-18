@@ -66,9 +66,20 @@ fi
 
 export PATH
 
+export ANDROID_HOME=/Users/wuyexiong/Android/android-sdk-macosx
+
 # following line added by RVM - wyx-20130430
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 
 # finis	
 # mhn 2011.7.19
+
+##
+# Your previous /Users/wuyexiong/.bash_profile file was backed up as /Users/wuyexiong/.bash_profile.macports-saved_2013-05-02_at_12:19:33
+##
+
+# MacPorts Installer addition on 2013-05-02_at_12:19:33: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+

@@ -5149,3 +5149,50 @@ sudo port -f uninstall installed
 sudo rm -rf     /opt/local     /Applications/DarwinPorts     /Applications/MacPorts     /Library/LaunchDaemons/org.macports.*     /Library/Receipts/DarwinPorts*.pkg     /Library/Receipts/MacPorts*.pkg     /Library/StartupItems/DarwinPortsStartup     /Library/Tcl/darwinports1.0     /Library/Tcl/macports1.0     ~/.macports
 brew list
 wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+sudo port install subversion-javahlbindings +no_bdb +universal
+sudo port -v selfupdate
+：q
+:q
+chsh -s /usr/local/bin/zsh
+vi /etc/profile 
+cd /opt/local/bin/
+ls /opt/local/sbin/
+cd /opt/local/sbin/
+ls -la
+cd .turd_MacPorts 
+vi .turd_MacPorts 
+cd ~
+cd Dev/Id
+cd Dev/IDE/
+cd eclipse/
+cd configuration/
+cd ..
+cd Eclipse.app/
+cd Contents/
+cd Re
+cd Resources/
+s
+cd ..
+cd MacOS/
+vi eclipse.ini 
+port -v
+which port
+vi ~/.zshrc
+port
+which port
+vi ~/.bash_profile
+vi ~/.zprofile 
+vi ~/.bash_profile
+vi ~/.zprofile 
+source ~/.zprofile 
+port -v
+port -v
+sudo port -v selfupdate
+sudo port upgrade --enforce-variants active +universal
+sudo port -v selfupdate
+sudo port clean subversion
+sudo port -v selfupdate
+vi /opt/local/etc/macports/macports.conf
+sudo vi /opt/local/etc/macports/macports.conf
+sudo port install subversion-javahlbindings +no_bdb +universal
+vi /etc/shells 

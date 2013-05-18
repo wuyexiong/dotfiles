@@ -9,6 +9,10 @@ source ~/.zsh/bindkeys.zsh
 source ~/.zsh/functions.zsh
 source ~/.zsh/history.zsh
 source ~/.zsh/zsh_hooks.zsh
+source ~/.zsh/zprofile
 #source ~/.zsh/hitch.zsh
 # source /opt/github/env.sh
+#zsh theme
+plugins=(macports rails3 rails git textmate ruby rvm gem git github brew bundler textmate pow)   
+export ZSH_THEME="agnoster"
 source  ${HOME}/.dotfiles/z/z.sh

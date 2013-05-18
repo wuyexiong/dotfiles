@@ -32,14 +32,23 @@ if [[ $IS_LINUX -eq 1 ]]; then
     export EDITOR='vim'
 fi
 
+# set Android env
+export ANDROID_HOME=/Users/wuyexiong/Android/android-sdk-macosx
+export PATH=${PATH}:$ANDROID_HOME/tools
+export PATH=${PATH}:$ANDROID_HOME/platform-tools
+
+# Set Maven env
+export M2_HOME=/Users/wuyexiong/Dev/Build/apache-maven
+export PATH=${PATH}:$M2_HOME/bin
+
 # Set LC_ALL="UTF8"
 export LC_ALL=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Virtual Environment Stuff
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Projects/django
+#export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Documents/workspace
 if [[ $HAS_VIRTUALENV -eq 1 ]]; then
     source /usr/local/bin/virtualenvwrapper.sh
 fi
