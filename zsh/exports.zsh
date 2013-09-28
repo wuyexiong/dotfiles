@@ -33,13 +33,31 @@ if [[ $IS_LINUX -eq 1 ]]; then
 fi
 
 # set Android env
+#export ANDROID_HOME=/Users/wuyexiong/Android/env/adt-bundle-mac-x86_64-20130514/sdk
 export ANDROID_HOME=/Users/wuyexiong/Android/android-sdk-macosx
 export PATH=${PATH}:$ANDROID_HOME/tools
 export PATH=${PATH}:$ANDROID_HOME/platform-tools
+export PATH=${PATH}:$ANDROID_HOME/build-tools/17.0.0
+#Cocos2d-x
+export COCOS2DX_HOME=/Users/wuyexiong/Android/game/cocos2d-x
+export PATH=${PATH}:$COCOS2DX_HOME
+
+export PATH=${PATH}:/Users/wuyexiong/Android/soft/apktool1.5.2
+export PATH=${PATH}:/Users/wuyexiong/Android/soft/dex2jar-0.0.9.13
+#set Android ndk env
+export NDK_ROOT=/Users/wuyexiong/Android/android-ndk-r9
+export PATH=${PATH}:$NDK_ROOT/
 
 # Set Maven env
-export M2_HOME=/Users/wuyexiong/Dev/Build/apache-maven
+export M2_HOME=/Users/wuyexiong/Dev/build/apache-maven
 export PATH=${PATH}:$M2_HOME/bin
+
+#set Gradle env
+export GRADLE_HOME=/Users/wuyexiong/Dev/build/gradle
+export PATH=${PATH}:$GRADLE_HOME/bin
+
+export SVN_HOME=/opt/subversion
+export PATH=${PATH}:$SVN_HOME/bin
 
 # Set LC_ALL="UTF8"
 export LC_ALL=en_US.UTF-8
