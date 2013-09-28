@@ -1,6 +1,6 @@
 [user]
 	name = Wuyexiong
-    email = forever_crying@qq.com
+	email = forever_crying@qq.com
 [color]
 	ui = auto
     interactive = auto
@@ -25,7 +25,7 @@
 	editor = "vim"
 	autocrlf = input
 	safecrlf = warn
-	excludesfile = /Users/mark/.gitignore_global
+	excludesfile = /Users/wuyexiong/.gitignore_global
     quotepath = false
 
 [merge]
@@ -45,11 +45,14 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 
 [difftool "sourcetree"]
-	cmd = opendiff "$LOCAL" "$REMOTE"
-    path =
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 
 # Sublime Text 2 as merge tool
 [mergetool "sublime"]
 	cmd = subl -n $MERGED
     trustExitCode = false
 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
