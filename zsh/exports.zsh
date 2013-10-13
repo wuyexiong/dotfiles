@@ -53,7 +53,7 @@ export M2_HOME=/Users/wuyexiong/Dev/build/apache-maven
 export PATH=${PATH}:$M2_HOME/bin
 
 #set Gradle env
-export GRADLE_HOME=/Users/wuyexiong/Dev/build/gradle
+export GRADLE_HOME=/Users/wuyexiong/DevSoft/Build/gradle
 export PATH=${PATH}:$GRADLE_HOME/bin
 
 export SVN_HOME=/opt/subversion
