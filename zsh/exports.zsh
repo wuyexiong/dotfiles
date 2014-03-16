@@ -42,14 +42,15 @@ export PATH=${PATH}:$ANDROID_HOME/build-tools/17.0.0
 export COCOS2DX_HOME=/Users/wuyexiong/Android/game/cocos2d-x
 export PATH=${PATH}:$COCOS2DX_HOME
 
-export PATH=${PATH}:/Users/wuyexiong/Android/soft/apktool1.5.2
-export PATH=${PATH}:/Users/wuyexiong/Android/soft/dex2jar-0.0.9.13
+export PATH=${PATH}:/Users/wuyexiong/Android/Fuck/apktool
+export PATH=${PATH}:/Users/wuyexiong/Android/Fuck/dex2jar
 #set Android ndk env
-export NDK_ROOT=/Users/wuyexiong/Android/android-ndk-r9
-export PATH=${PATH}:$NDK_ROOT/
+#export NDK_ROOT=/Users/wuyexiong/Android/android-ndk-r9
+#export PATH=${PATH}:$NDK_ROOT/
+export PATH=/usr/local/bin/npm/bin:$PATH
 
 # Set Maven env
-export M2_HOME=/Users/wuyexiong/Dev/build/apache-maven
+export M2_HOME=/Users/wuyexiong/DevSoft/Build/maven
 export PATH=${PATH}:$M2_HOME/bin
 
 #set Gradle env
