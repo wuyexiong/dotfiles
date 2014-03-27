@@ -37,7 +37,7 @@ fi
 export ANDROID_HOME=/Users/wuyexiong/Android/android-sdk-macosx
 export PATH=${PATH}:$ANDROID_HOME/tools
 export PATH=${PATH}:$ANDROID_HOME/platform-tools
-export PATH=${PATH}:$ANDROID_HOME/build-tools/17.0.0
+export PATH=${PATH}:$ANDROID_HOME/build-tools/19.0.3
 #Cocos2d-x
 export COCOS2DX_HOME=/Users/wuyexiong/Android/game/cocos2d-x
 export PATH=${PATH}:$COCOS2DX_HOME

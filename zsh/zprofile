@@ -1,6 +1,3 @@
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 PATH="/opt/local/bin:${PATH}"
 # Initialization for FDK command line tools.Tue May 28 01:59:43 2013
 FDK_EXE="/Users/wuyexiong/bin/FDK/Tools/osx"
@@ -31,3 +28,5 @@ if [ -f "${SSH_ENV}" ]; then
 else
     start_agent;
 fi
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
