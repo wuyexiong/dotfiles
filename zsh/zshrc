@@ -20,4 +20,13 @@ export ZSH_THEME="agnoster"
 export PATH=/usr/local/bin/npm/bin:$PATH
 source  ${HOME}/.dotfiles/z/z.sh
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+#JavaHome switch
+alias java_ls='/usr/libexec/java_home -V 2>&1 | grep -E "\d.\d.\d[,_]" | cut -d , -f 1 | colrm 1 4 | grep -v Home'
+function java_use() {
+    export JAVA_HOME=$(/usr/libexec/java_home -v $1)
+    export PATH=$JAVA_HOME/bin:$PATH
+    java -version
+}
+function mountAndroid { hdiutil attach ~/android.dmg -mountpoint /Volumes/android; }
 rvm use ruby-2.1.1
+unsetopt NOMATCH
