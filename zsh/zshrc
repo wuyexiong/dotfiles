@@ -10,16 +10,16 @@ source ~/.zsh/functions.zsh
 source ~/.zsh/history.zsh
 source ~/.zsh/zsh_hooks.zsh
 source ~/.zsh/zprofile
-source ~/.zsh/zlogin
+#source ~/.zsh/zlogin
 #source ~/.zsh/hitch.zsh
 # source /opt/github/env.sh
 #zsh theme
 plugins=(macports rails3 rails git textmate ruby rvm gem git github brew bundler textmate pow)
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-export ZSH_THEME="agnoster"
+#export ZSH_THEME="agnoster"
+export ZSH_THEME="wedisagree"
 export PATH=/usr/local/bin/npm/bin:$PATH
 source  ${HOME}/.dotfiles/z/z.sh
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 #JavaHome switch
 alias java_ls='/usr/libexec/java_home -V 2>&1 | grep -E "\d.\d.\d[,_]" | cut -d , -f 1 | colrm 1 4 | grep -v Home'
 function java_use() {
@@ -28,5 +28,6 @@ function java_use() {
     java -version
 }
 function mountAndroid { hdiutil attach ~/android.dmg -mountpoint /Volumes/android; }
-rvm use ruby-2.1.1
 unsetopt NOMATCH
+rvm use ruby-2.0.0-p481
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
