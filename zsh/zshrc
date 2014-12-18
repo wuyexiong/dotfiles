@@ -29,5 +29,5 @@ function java_use() {
 }
 function mountAndroid { hdiutil attach ~/android.dmg -mountpoint /Volumes/android; }
 unsetopt NOMATCH
-rvm use ruby-2.0.0-p481
+ulimit -n 8192
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
