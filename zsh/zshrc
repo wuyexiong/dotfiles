@@ -27,7 +27,19 @@ function java_use() {
     export PATH=$JAVA_HOME/bin:$PATH
     java -version
 }
+java_use 1.7
 function mountAndroid { hdiutil attach ~/android.dmg -mountpoint /Volumes/android; }
 unsetopt NOMATCH
-ulimit -n 8192
+#ulimit -n 8192
+ulimit -S -n 1024
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+[[ -s "/Users/wuyexiong/.gvm/scripts/gvm" ]] && source "/Users/wuyexiong/.gvm/scripts/gvm"
+#export GOROOT=$HOME/treegogogo
+# export GOPATH=$GOROOT
+# export PATH=$PATH:$GOBIN
+
+# Go Env
+gvm use go1.2.1 > /dev/null 2>&1
+export PATH="${GOPATH//://bin:}/bin:$PATH"
+export GOBIN=$GOPATH/bin
+export DOCKER_HOST=tcp://127.0.0.1:4243

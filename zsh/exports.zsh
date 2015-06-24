@@ -61,9 +61,15 @@ export PATH=/usr/local/bin/npm/bin:$PATH
 export M2_HOME=/Users/wuyexiong/DevSoft/Build/maven
 export PATH=${PATH}:$M2_HOME/bin
 
+#Go
+export GOPATH=/Users/wuyexiong/treegogogo
+# export GOROOT=$HOME/treegogogo
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+
 #set Gradle env
-export GRADLE_HOME=/Users/wuyexiong/DevSoft/Build/gradle
-export PATH=${PATH}:$GRADLE_HOME/bin
+#export GRADLE_HOME=/Users/wuyexiong/DevSoft/Build/gradle
+#export PATH=${PATH}:$GRADLE_HOME/bin
 
 export SVN_HOME=/opt/subversion
 export PATH=${PATH}:$SVN_HOME/bin
@@ -83,3 +89,8 @@ export PROJECT_HOME=$HOME/Documents/workspace
 if [[ $HAS_VIRTUALENV -eq 1 ]]; then
     source /usr/local/bin/virtualenvwrapper.sh
 fi
+#Docker
+# export DOCKER_HOST=tcp://192.168.59.104:2376
+# export DOCKER_CERT_PATH=/Users/wuyexiong/.boot2docker/certs/boot2docker-vm
+# export DOCKER_TLS_VERIFY=1
+#eval "$(boot2docker shellinit)"

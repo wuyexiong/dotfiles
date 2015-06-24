@@ -227,3 +227,7 @@ alias nomz='ps aux | less'
 alias nomnom='killall'
 alias cya='reboot'
 alias kthxbai='halt'
+
+#MacVim Env
+alias vi='mvim -v'
+alias vim='mvim -v'
