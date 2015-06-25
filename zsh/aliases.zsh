@@ -229,5 +229,5 @@ alias cya='reboot'
 alias kthxbai='halt'
 
 #MacVim Env
-alias vi='mvim -v'
-alias vim='mvim -v'
+#alias vi='mvim -v'
+#alias vim='mvim -v'

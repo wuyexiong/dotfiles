@@ -14,10 +14,12 @@ source ~/.zsh/zprofile
 #source ~/.zsh/hitch.zsh
 # source /opt/github/env.sh
 #zsh theme
-plugins=(macports rails3 rails git textmate ruby rvm gem git github brew bundler textmate pow)
+plugins=(macports rails3 rails git textmate ruby rvm gem git github brew bundler textmate pow bower)
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-#export ZSH_THEME="agnoster"
-export ZSH_THEME="wedisagree"
+export ZSH_THEME="agnoster"
+#export ZSH_THEME="wedisagree"
+#source ~/zsh-git-prompt/zshrc.sh
+#PROMPT='%~%b$(git_super_status) %# '
 export PATH=/usr/local/bin/npm/bin:$PATH
 source  ${HOME}/.dotfiles/z/z.sh
 #JavaHome switch
@@ -42,4 +44,3 @@ ulimit -S -n 1024
 gvm use go1.2.1 > /dev/null 2>&1
 export PATH="${GOPATH//://bin:}/bin:$PATH"
 export GOBIN=$GOPATH/bin
-export DOCKER_HOST=tcp://127.0.0.1:4243
